@@ -29,7 +29,7 @@ public class SidebarController {
                 FontAwesomeIconView iconView = new FontAwesomeIconView(tab.icon());
                 iconView.getStyleClass().add("fontawesome-dark");
                 iconView.getStyleClass().add("medium");
-                iconView.setGlyphSize(20);
+                iconView.setGlyphSize(16);
                 newTab.setGraphic(iconView);
             } else if (tab.image() != null) {
                 newTab.setGraphic(new ImageView(tab.image()));

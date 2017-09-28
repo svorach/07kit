@@ -19,6 +19,12 @@
                     <FontAwesomeIconView glyphName="PICTURE_ALT" styleClass="fontawesome-light" />
                 </graphic>
             </Button>
+
+            <Button fx:id="privacyscreen" onAction="#onShowPrivacyScreen" styleClass="primary, medium">
+                <graphic>
+                    <FontAwesomeIconView glyphName="HAND_PEACE_ALT" styleClass="fontawesome-light" />
+                </graphic>
+            </Button>
             <Button fx:id="watcher" onAction="#onShowWatcher" styleClass="primary, medium">
                 <graphic>
                     <FontAwesomeIconView glyphName="TELEVISION" styleClass="fontawesome-light" />
