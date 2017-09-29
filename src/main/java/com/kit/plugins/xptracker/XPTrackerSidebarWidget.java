@@ -108,7 +108,7 @@ public class XPTrackerSidebarWidget extends JPanel implements SidebarWidget {
             progressBar.setPreferredSize(new Dimension(160, 20));
             progressBar.setMaximumSize(new Dimension(160, 20));
             progressBar.setBackgroundColour(Color.RED.darker().darker());
-            progressBar.setForegroundColour(Color.GREEN.darker());
+            progressBar.setForegroundColour(Color.cyan);
             progressBar.setBorderColour(Color.WHITE.darker());
             progressBar.setBorderWidth(1);
             progressBar.setMinimum(0);

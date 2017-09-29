@@ -6,6 +6,7 @@ import com.kit.core.Session;
 import com.kit.gui.ControllerManager;
 import com.kit.gui.controller.GalleryController;
 import com.kit.gui.controller.SettingsController;
+import com.kit.gui.controller.PrivacyScreenController;
 import com.kit.gui.util.ComponentMover;
 import com.kit.plugins.afk.AFKWatcherPlugin;
 import jiconfont.icons.FontAwesome;
@@ -37,7 +38,7 @@ public class MateTitleBar extends JPanel {
             leftButtons.setLayout(layout);
             leftButtons.setBorder(null);
             leftButtons.getInsets().set(0, 0, 0, 0);
-            leftButtons.setBackground(Application.COLOUR_SCHEME.getSelected());
+            leftButtons.setBackground(Application.COLOUR_SCHEME.getDark());
 
             MateTitleButton screenshot = new MateTitleButton(IconFontSwing.buildIcon(FontAwesome.CAMERA, 20, Application.COLOUR_SCHEME.getText()));
             screenshot.addActionListener((evt) -> {
@@ -67,6 +68,12 @@ public class MateTitleBar extends JPanel {
                 }
             });
             leftButtons.add(watcher);
+
+            MateTitleButton privacyScreen = new MateTitleButton(IconFontSwing.buildIcon(FontAwesome.ASTERISK, 20, Application.COLOUR_SCHEME.getText()));
+            privacyScreen.addActionListener((evt) -> {
+                ControllerManager.get(PrivacyScreenController.class).show();
+            });
+            leftButtons.add(privacyScreen);
 
             MateTitleButton openSettings = new MateTitleButton(IconFontSwing.buildIcon(FontAwesome.COG, 20, Application.COLOUR_SCHEME.getText()));
             openSettings.addActionListener((evt) -> {

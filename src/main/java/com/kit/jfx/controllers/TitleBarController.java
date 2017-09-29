@@ -2,8 +2,10 @@ package com.kit.jfx.controllers;
 
 import com.kit.core.Session;
 import com.kit.core.model.Property;
+import com.kit.gui.Controller;
 import com.kit.gui.ControllerManager;
 import com.kit.gui.controller.GalleryController;
+import com.kit.gui.controller.PrivacyScreenController;
 import com.kit.gui.controller.SettingsController;
 import com.kit.jfx.Frame;
 import javafx.event.ActionEvent;
@@ -63,6 +65,8 @@ public class TitleBarController {
     public void onShowWatcher(ActionEvent actionEvent) {
 
     }
+
+    public void onShowPrivacyScreen(ActionEvent actionEvent) { ControllerManager.get(PrivacyScreenController.class).show(); }
 
     public void onShowSettings(ActionEvent actionEvent) {
         ControllerManager.get(SettingsController.class).show();

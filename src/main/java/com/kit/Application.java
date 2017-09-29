@@ -9,6 +9,7 @@ import com.kit.gui.controller.*;
 import com.kit.gui.laf.ColourScheme;
 import com.kit.gui.laf.DarkColourScheme;
 import com.kit.gui.view.AppletView;
+import com.kit.gui.view.PrivacyScreenView;
 import javafx.scene.text.Font;
 import jiconfont.icons.FontAwesome;
 import jiconfont.swing.IconFontSwing;
@@ -83,6 +84,7 @@ public class Application {
                 new WidgetDebugController();
                 new SettingsController();
                 new GalleryController();
+                new PrivacyScreenController();
 
                 Session.get().onAuthenticated();
                 //ControllerManager.get(MainController.class).show();
